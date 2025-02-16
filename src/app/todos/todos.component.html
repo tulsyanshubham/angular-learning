@@ -4,9 +4,6 @@
 }
 <ul>
     @for (todo of todoItems(); track todo.id) {
-        <li>
-            <input type="checkbox" id="{{todo.title}}" [value]="todo.completed" />
-            <label for="{{todo.title}}">{{todo.title}}</label>
-        </li>
+        <app-todo-item (todoTogle)="updateItem($event)" [todo]="todo" />
     }
 </ul>
