@@ -8,6 +8,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  title = signal("this is header signal");
-  description = "this is header description without signal";
+  title = signal("Welcome to my first Angular app!");
 }
