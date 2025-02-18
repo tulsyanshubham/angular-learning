@@ -1,0 +1,12 @@
+<li appHighlightCompletedTodo [isCompleted]="todo().completed">
+    <input
+        type="checkbox"
+        id="{{todo().title}}"
+        [checked]="todo().completed"
+        (change)="this.todoClicked()"
+    />
+    <label
+        for="{{todo().title}}">
+        {{todo().title | uppercase}}
+    </label>
+</li>
